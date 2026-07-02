@@ -1,121 +1,28 @@
-.catalogo-grid{
+
+
+.catalogo-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 }
 
-@media (min-width: 768px){
-
-    .catalogo-grid{
+@media (min-width: 768px) {
+    .catalogo-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-@media (min-width: 992px){
-
-    .catalogo-grid{
+@media (min-width: 992px) {
+    .catalogo-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
 
 
-@import "functions";
-@import "variables";
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "utilities";
-
-.catalogo{
-    font-family: 'Times New Roman', Times, serif;
-    font: bold; 
-    color: brown;
-   font-size: 2rem;
-   font-weight: bold;
-   text-align: center;
-}
-
-
-
-.one{
-    font-family: 'Times New Roman', Times, serif;
-    font: bold; 
-    color: brown;
-   font-size: 2rem;
-   font-weight: bold;
-
-}
-p {
-   font-size: 1.2rem;
-}
-
-
-.bg-cor {
-    background-color: burlywood;
-    padding: 15px 0;
-}
 
 body {
-    background-color: burlywood;
+    background-color: bisque;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    text-align: center;
-
-}
-
-.card-img-top {
-    background-color:burlywood;
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card-body{
-    background-color: burlywood;
-    transform: translateY(-6px);
-    transition: 0.3s;
-}
-
-.card-body .btn{
-    transform: translateY(-6px);
-    transition: 0.3s;
-    margin-top:auto
-}
-
-/* .card {
-    height: 100%;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column; */
-.hero {
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(img/BackGroundImoveis.png);
-    background-size: cover;
-    background-position: center;
-
-
-    
-         
- 
-}
-
-
-
-.conteudo-hero{
-     max-width: 600rem;
-     flex: left;
-
 }
 
 .container {
@@ -124,23 +31,70 @@ header {
     margin: auto;
 }
 
-.titulo{
+header {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.catalogo,
+.one {
+    font-family: "Times New Roman", Times, serif;
+    color: brown;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.catalogo {
+    text-align: center;
+}
+
+.titulo {
     background-color: burlywood;
-    align-items: center;
     text-align: center;
     width: 100%;
 }
 
 
-.banner{
+
+.bg-cor {
+    background-color: burlywood;
+    padding: 15px 0;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("img/BackGroundImoveis.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-hero {
+    max-width: 600rem;
+}
+
+
+
+.banner {
     height: 500px;
 
-
-    
     background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),
         url("img/camaCasalBanner.jpg");
 
@@ -148,105 +102,111 @@ header {
     background-position: center;
 }
 
-.produto{
-    padding: 30px;
-    background-color: burlywood ;
-}
-
-.preco{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
-
-body{
-    background-color: bisque;
-}
-
-.tudo{
-    background-color: burlywood;
-}
-
-.titulo{
-    background-color: burlywood;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
-
-.bannerSofa{
+.bannerSofa {
     height: 500px;
 
-
-    
     background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),
         url("img/sofá.webp");
-background-image: url(/img/sofá.webp);
+
     background-size: cover;
     background-position: center;
 }
 
-.produto{
-    padding: 30px;
-    background-color: burlywood ;
-}
-
-.preco{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
-
-body{
-    background-color: bisque;
-}
-
-.tudo{
-    background-color: burlywood;
-}
-
-.bannerCama{
+.bannerCama {
     height: 500px;
 
-
-    
     background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),
         url("img/camaCasalBanner.jpg");
-background-image: url(img/camaCasalBanner.jpg);
+
     background-size: cover;
     background-position: center;
 }
 
-.produto{
-    padding: 30px;
-    background-color: burlywood ;
+
+
+.card {
+    transition: 0.3s;
 }
 
-.preco{
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-img-top {
+    background-color: burlywood;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+
+
+.produto {
+    padding: 30px;
+    background-color: burlywood;
+}
+
+.preco {
     font-size: 30px;
     font-weight: bold;
     color: green;
 }
 
-body{
-    background-color: bisque;
-}
 
-.tudo{
+
+.tudo {
     background-color: burlywood;
 }
 
-.comprar{
-    width: 10%;
+.comprar {
+    width: 180px;
     height: 50px;
     color: green;
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+
+    .banner,
+    .bannerSofa,
+    .bannerCama {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner,
+    .bannerSofa,
+    .bannerCama {
+        height: 250px;
+    }
+
+    .catalogo,
+    .one {
+        font-size: 1.6rem;
+    }
+
+    .comprar {
+        width: 100%;
+    }
 }
