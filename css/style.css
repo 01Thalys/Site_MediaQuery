@@ -100,7 +100,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-image: url(/img/BackGroundImoveis.png);
+    background-image: url(img/BackGroundImoveis.png);
     background-size: cover;
     background-position: center;
 
@@ -142,7 +142,7 @@ header {
             rgba(0,0,0,0.3),
             rgba(0,0,0,0.3)
         ),
-        url("/img/camaCasalBanner.jpg");
+        url("img/camaCasalBanner.jpg");
 
     background-size: cover;
     background-position: center;
@@ -185,7 +185,7 @@ body{
             rgba(0,0,0,0.3),
             rgba(0,0,0,0.3)
         ),
-        url("/img/sofá.webp");
+        url("img/sofá.webp");
 background-image: url(/img/sofá.webp);
     background-size: cover;
     background-position: center;
@@ -220,8 +220,8 @@ body{
             rgba(0,0,0,0.3),
             rgba(0,0,0,0.3)
         ),
-        url("/img/camaCasalBanner.jpg");
-background-image: url(/img/camaCasalBanner.jpg);
+        url("img/camaCasalBanner.jpg");
+background-image: url(img/camaCasalBanner.jpg);
     background-size: cover;
     background-position: center;
 }
