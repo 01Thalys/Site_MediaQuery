@@ -1,5 +1,3 @@
-
-
 .catalogo-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -17,8 +15,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
 
 body {
     background-color: bisque;
@@ -39,20 +35,18 @@ p {
     font-size: 1.2rem;
 }
 
-/* ===========================
-   TÍTULOS
-=========================== */
-
 .catalogo,
 .one {
     font-family: "Times New Roman", Times, serif;
-    color: brown;
+    color: white;
     font-size: 2rem;
     font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 .catalogo {
     text-align: center;
+    margin-top: 20px;
 }
 
 .titulo {
@@ -61,79 +55,84 @@ p {
     width: 100%;
 }
 
-
-
 .bg-cor {
     background-color: burlywood;
     padding: 15px 0;
 }
 
-/* ===========================
-   HERO
-=========================== */
-
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: url("img/BackGroundImoveis.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.conteudo-hero {
-    max-width: 600rem;
-}
-
-
-
-.banner {
-    height: 500px;
+    min-height: 100vh;
+    padding: 60px 0;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("img/BackGroundImoveis.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.conteudo-hero {
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    height: 500px;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
         ),
         url("img/camaCasalBanner.jpg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bannerSofa {
     height: 500px;
-
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
         ),
         url("img/sofá.webp");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bannerCama {
     height: 500px;
-
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
         ),
         url("img/camaCasalBanner.jpg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-
 .card {
-    transition: 0.3s;
+    transition: .3s;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
 .card:hover {
@@ -157,8 +156,6 @@ p {
     margin-top: auto;
 }
 
-
-
 .produto {
     padding: 30px;
     background-color: burlywood;
@@ -169,8 +166,6 @@ p {
     font-weight: bold;
     color: green;
 }
-
-
 
 .tudo {
     background-color: burlywood;
@@ -183,13 +178,16 @@ p {
     font-weight: bold;
 }
 
-
 @media (max-width: 992px) {
 
     .banner,
     .bannerSofa,
     .bannerCama {
         height: 350px;
+    }
+
+    .hero {
+        background-attachment: scroll;
     }
 }
 
@@ -208,5 +206,11 @@ p {
 
     .comprar {
         width: 100%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 40px 0;
+        background-attachment: scroll;
     }
 }
