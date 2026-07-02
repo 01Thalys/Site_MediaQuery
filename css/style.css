@@ -61,23 +61,18 @@ p {
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 60px 0;
+    
+    min-height:100vh;
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
-        ),
-        url("img/BackGroundImoveis.png");
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image:url("img/BackGroundImoveis.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
 }
 
 .conteudo-hero {
