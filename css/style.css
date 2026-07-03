@@ -1,5 +1,4 @@
-/* RESET */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@ body {
     background-color: bisque;
 }
 
-/* ================= NAVBAR ================= */
+
 
 .navbar {
     background-color: burlywood;
@@ -31,7 +30,7 @@ body {
     font-weight: bold;
 }
 
-/* MENU MOBILE */
+
 .menu-toggle {
     display: none;
 }
@@ -42,7 +41,7 @@ body {
     cursor: pointer;
 }
 
-/* ================= HERO ================= */
+
 
 .hero {
     min-height: 90vh;
@@ -60,7 +59,7 @@ body {
     padding: 40px;
 }
 
-/* ================= GRID ================= */
+
 
 .container {
     width: 90%;
@@ -78,7 +77,7 @@ body {
     width: calc(33.333% - 14px);
 }
 
-/* ================= CARDS ================= */
+
 
 .card {
     background: burlywood;
@@ -107,7 +106,7 @@ body {
     color: green;
 }
 
-/* ================= BOTÕES ================= */
+
 
 .btn {
     display: inline-block;
@@ -135,7 +134,7 @@ body {
     width: 100%;
 }
 
-/* ================= SEÇÕES ================= */
+
 
 .section {
     padding: 60px 0;
@@ -149,7 +148,7 @@ body {
     margin-top: 15px;
 }
 
-/* ================= DEPOIMENTOS ================= */
+
 
 .depoimento {
     background: white;
@@ -157,7 +156,7 @@ body {
     border-radius: 10px;
 }
 
-/* ================= RESPONSIVO ================= */
+
 
 @media (max-width: 992px) {
     .col-33 {
