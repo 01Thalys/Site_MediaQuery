@@ -71,18 +71,18 @@ body {
 .hero {
     min-height: 100vh;
 
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url("../img/backgroundimoveis.png") !important;
-
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-image: url("../img/BackGroundImoveis.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     color: brown;
+    padding: 20px;
 }
 
 .conteudo-hero {
