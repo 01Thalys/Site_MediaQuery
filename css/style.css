@@ -1,307 +1,188 @@
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-background-image: url("img/BackGroundImoveis.png");
-
-body{
-    background-color:bisque;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
+/* ================= NAVBAR ================= */
 
-
-.bg-cor{
-    background-color:burlywood;
-    padding:15px 0;
+.navbar {
+    background-color: burlywood;
+    padding: 15px 20px;
 }
 
-header{
-    text-align:center;
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero{
-
-    min-height:100vh;
-
-    background-image:url("../img/BackGroundImoveis.png");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
-
-    padding:60px 0;
-
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
+/* MENU MOBILE */
+.menu-toggle {
+    display: none;
 }
 
-.heroMenu{
-
-    height:420px;
-
-    background-image:url("../img/BackGroundImoveis.png");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    color:white;
-
-    text-align:center;
-
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-.conteudo-hero{
+/* ================= HERO ================= */
 
-    text-align:center;
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    margin-bottom:60px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../img/BackGroundImoveis.png");
 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
 }
 
-.one{
+/* ================= GRID ================= */
 
-    color:brown;
-
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.one h3{
-
-    font-size:55px;
-
-    font-family:"Times New Roman", serif;
-
-    font-weight:bold;
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.one p{
-
-    font-size:28px;
-
-    margin-top:15px;
-
-    font-family:"Times New Roman", serif;
-
+.col-33 {
+    width: calc(33.333% - 14px);
 }
 
-.catalogo{
+/* ================= CARDS ================= */
 
-    margin-top:25px;
-
-    font-size:45px;
-
-    font-weight:bold;
-
-    color:brown;
-
-    font-family:"Times New Roman", serif;
-
+.card {
+    background: burlywood;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
-/* ==========================
-   CONTAINER
-========================== */
-
-.container{
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:auto;
-
+.card:hover {
+    transform: translateY(-8px);
 }
 
-/* ==========================
-   CARDS
-========================== */
-
-.card{
-
-    transition:0.3s;
-
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
-.card:hover{
-
-    transform:translateY(-8px);
-
+.card-body {
+    padding: 15px;
 }
 
-.card-img-top{
-
-    width:100%;
-
-    height:220px;
-
-    object-fit:cover;
-
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
 }
 
-.card-body{
+/* ================= BOTÕES ================= */
 
-    background-color:burlywood;
-
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
-.card-body .btn{
-
-    margin-top:10px;
-
+.btn-danger {
+    background: red;
+    color: white;
 }
 
-.preco{
-
-    font-size:32px;
-
-    color:green;
-
-    font-weight:bold;
-
+.btn-dark {
+    background: black;
+    color: white;
 }
 
-/* ==========================
-   BANNERS
-========================== */
-
-.banner{
-
-    height:500px;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.3),
-            rgba(0,0,0,.3)
-        ),
-        url("img/camaCasalBanner.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
+.btn-success {
+    background: green;
+    color: white;
+    width: 100%;
 }
 
-.bannerCama{
+/* ================= SEÇÕES ================= */
 
-    height:500px;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.3),
-            rgba(0,0,0,.3)
-        ),
-        url("img/camaCasalBanner.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
+.section {
+    padding: 60px 0;
 }
 
-.bannerSofa{
-
-    height:500px;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.3),
-            rgba(0,0,0,.3)
-        ),
-        url("img/sofa.webp");
-
-    background-size:cover;
-
-    background-position:center;
-
+.text-center {
+    text-align: center;
 }
 
-/* ==========================
-   PRODUTO
-========================== */
-
-.produto{
-
-    background-color:burlywood;
-
-    padding:30px;
-
+.mt-3 {
+    margin-top: 15px;
 }
 
-.titulo{
+/* ================= DEPOIMENTOS ================= */
 
-    background-color:burlywood;
-
-    text-align:center;
-
-    padding:20px;
-
+.depoimento {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.tudo{
+/* ================= RESPONSIVO ================= */
 
-    background-color:burlywood;
-
+@media (max-width: 992px) {
+    .col-33 {
+        width: calc(50% - 10px);
+    }
 }
 
-.comprar{
-
-    width:180px;
-
-    height:50px;
-
-}
-
-.carta_customizada{
-
-    transition:.3s;
-
-}
-
-.carta_customizada:hover{
-
-    transform:translateY(-6px);
-
-}
-
-/* ==========================
-   RESPONSIVIDADE
-========================== */
-
-@media(max-width:768px){
-
-    .one h3{
-
-        font-size:40px;
-
+@media (max-width: 768px) {
+    .col-33 {
+        width: 100%;
     }
 
-    .one p{
-
-        font-size:22px;
-
+    .menu-icon {
+        display: block;
     }
 
-    .catalogo{
-
-        font-size:35px;
-
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: burlywood;
+        margin-top: 10px;
     }
 
+    .menu-toggle:checked + .menu {
+        display: flex;
+    }
 }
-.titulo{ background-color: burlywood; align-items: center; text-align: center; width: 100%; } .banner{ height: 500px; background: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url("/img/camaCasalBanner.jpg"); background-size: cover; background-position: center; } .produto{ padding: 30px; background-color: burlywood ; } .preco{ font-size: 30px; font-weight: bold; color: green; } body{ background-color: bisque; } .tudo{ background-color: burlywood; } .titulo{ background-color: burlywood; align-items: center; text-align: center; width: 100%; } .bannerSofa{ height: 500px; background: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url("/img/sofá.webp"); background-image: url(/img/sofá.webp); background-size: cover; background-position: center; } .produto{ padding: 30px; background-color: burlywood ; } .preco{ font-size: 30px; font-weight: bold; color: green; } body{ background-color: bisque; } .tudo{ background-color: burlywood; } .bannerCama{ height: 500px; background: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url("/img/camaCasalBanner.jpg"); background-image: url(/img/camaCasalBanner.jpg); background-size: cover; background-position: center; } .produto{ padding: 30px; background-color: burlywood ; } .preco{ font-size: 30px; font-weight: bold; color: green; } body{ background-color: bisque; } .tudo{ background-color: burlywood; } .comprar{ width: 10%; height: 50px; color: green; }
