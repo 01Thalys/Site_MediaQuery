@@ -1,4 +1,42 @@
- {
+.one{
+
+    color:brown;
+
+}
+
+.one h3{
+
+    font-size:55px;
+
+    font-family:"Times New Roman", serif;
+
+    font-weight:bold;
+
+}
+
+.one p{
+
+    font-size:28px;
+
+    margin-top:15px;
+
+    font-family:"Times New Roman", serif;
+
+}
+
+.catalogo{
+
+    margin-top:25px;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    color:brown;
+
+    font-family:"Times New Roman", serif;
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
