@@ -168,24 +168,39 @@ body {
 
 
 
+/* GRID CORRIGIDO (substitui comportamento real do Bootstrap) */
 
-@media (max-width: 997px) {
-    .col-lg-4 {
-        width: 50%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* importante: garantir que os filhos não quebrem errado */
+.row > * {
+    flex-shrink: 0;
+}
+
+/* col-12 */
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* col-md-6 */
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
-
-@media (max-width: 768px) {
-    .col-md-6,
+/* col-lg-4 */
+@media (min-width: 992px) {
     .col-lg-4 {
-        width: 100%;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
     }
-
-    .navbar .container,
-    .navbar .container-fluid {
-        flex-direction: column;
-        gap: 10px;
+}
     }
 
     .hero {
