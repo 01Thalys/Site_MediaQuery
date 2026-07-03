@@ -1,5 +1,4 @@
-/* RESET */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===================== NAVBAR ===================== */
+
 
 .bg-cor {
     background-color: burlywood;
@@ -31,7 +30,7 @@ body {
     align-items: center;
 }
 
-/* ===================== CONTAINER (Bootstrap replacement) ===================== */
+
 
 .container,
 .container-fluid {
@@ -40,7 +39,7 @@ body {
     margin: auto;
 }
 
-/* ===================== GRID (row/col Bootstrap replacement) ===================== */
+
 
 .row {
     display: flex;
@@ -65,7 +64,7 @@ body {
     width: 33.333%;
 }
 
-/* ===================== HERO ===================== */
+
 
 .hero {
     min-height: 100vh;
@@ -76,7 +75,7 @@ body {
     padding: 60px 0;
 }
 
-/* ===================== CARDS ===================== */
+
 
 .card {
     transition: 0.3s;
@@ -159,7 +158,7 @@ body {
     opacity: 0.8;
 }
 
-/* ===================== PREÇO ===================== */
+
 
 .preco {
     font-size: 32px;
@@ -167,16 +166,16 @@ body {
     font-weight: bold;
 }
 
-/* ===================== RESPONSIVIDADE (SUBSTITUI col-md / col-lg) ===================== */
 
-/* tablet */
+
+
 @media (max-width: 992px) {
     .col-lg-4 {
         width: 50%;
     }
 }
 
-/* mobile */
+
 @media (max-width: 768px) {
     .col-md-6,
     .col-lg-4 {
