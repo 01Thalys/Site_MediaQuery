@@ -69,20 +69,12 @@ body {
 
 
 .hero {
-    min-height: 100vh;
-
-    background-image: url("../img/BackGroundImoveis.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    color: brown;
-    padding: 20px;
+    flex-direction: column;
 }
 
 .conteudo-hero {
